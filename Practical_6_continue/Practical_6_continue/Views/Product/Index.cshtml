@@ -1,0 +1,38 @@
+﻿@model List<Practical_6_continue.Models.Product>
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    Layout = null;
+}
+
+
+<h2>Index</h2>
+
+<h2>Name : Thanki Parth </h2>
+<h2>Enroll : 92400120470 </h2>
+<table border ="1">
+    <tr>
+        <th>ID</th>
+        <th>Product</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductId</td>
+            <td>@item.ProductName</td>
+            <td>@item.Description</td>
+            <td>@item.Price</td>
+            <td>@item.Category</td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.ProductId }) |
+                @*@Html.ActionLink("Edit", "Edit", new { id = item.ProductId }) |*@
+                @*@Html.ActionLink("Delete", "Delete", new { id = item.ProductId })*@
+            </td>   
+        </tr>
+    }
+</table>

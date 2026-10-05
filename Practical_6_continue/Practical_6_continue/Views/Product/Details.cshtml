@@ -1,0 +1,23 @@
+﻿@model Practical_6_continue.Models.Product
+@{
+    ViewBag.Title = "Details";
+}
+@{ 
+    Layout = null;
+}
+
+<h2>Details</h2>
+@if (Model != null)
+{
+    <p>ID: @Model.ProductId</p>
+    <p>Product: @Model.ProductName</p>
+    <p>Description: @Model.Description</p>
+    <p>Price: @Model.Price</p>
+    <p>Category: @Model.Category</p>
+}
+else
+{
+    <p>Product not found.</p>
+}
+<br />
+@Html.ActionLink("Back to List", "Index")
