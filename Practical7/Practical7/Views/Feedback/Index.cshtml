@@ -1,0 +1,32 @@
+@model IEnumerable<Practical7.Models.Feedback>
+@{
+    ViewBag.Title = "Feedback Received";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ActionLink("Send new feedback", "Create", "Feedback", null, new { @class = "btn btn-success" })
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Submitted</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.Encode(item.Name)</td>
+            <td>@Html.Encode(item.Email)</td>
+            <td>@Html.Encode(item.Message)</td>
+            <td>@item.SubmittedAt.ToLocalTime().ToString("g")</td>
+        </tr>
+    }
+    </tbody>
+</table>

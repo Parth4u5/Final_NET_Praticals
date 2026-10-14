@@ -1,0 +1,11 @@
+@{
+    ViewBag.Title = "Thank You";
+}
+
+<h2>Thank you!</h2>
+<p>Your feedback has been received. We appreciate you taking the time to contact us.</p>
+
+<p>
+    @Html.ActionLink("Back to home", "Index", "Home", null, new { @class = "btn btn-primary" })
+    @Html.ActionLink("View all feedback", "Index", "Feedback", null, new { @class = "btn btn-link" })
+</p>
