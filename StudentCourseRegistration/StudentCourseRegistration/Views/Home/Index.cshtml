@@ -1,0 +1,97 @@
+@{
+    ViewData["Title"] = "Overview";
+}
+
+<section class="hero" data-reveal>
+    <div class="eyebrow">Marwadi University &middot; Department of Computer Engineering</div>
+    <h1 class="hero-title">Student<br /><em>course</em> register.</h1>
+    <p class="hero-lede">
+        A small, focused portal for recording enrollments. Add a student, review the directory,
+        and keep every program and semester in one place.
+    </p>
+    <div class="hero-actions">
+        <a asp-controller="Student" asp-action="Create" class="btn btn-solid">
+            New registration <span class="arrow" aria-hidden="true">&#8599;</span>
+        </a>
+        <a asp-controller="Student" asp-action="Index" class="btn btn-text">
+            Browse directory <span class="arrow" aria-hidden="true">&#8594;</span>
+        </a>
+    </div>
+    <div class="hero-side" aria-hidden="true">Index &nbsp; 01 / 03</div>
+</section>
+
+<hr class="rule" />
+
+<section class="section">
+    <div class="section-head" data-reveal>
+        <div class="section-no">I.</div>
+        <div>
+            <h2 class="section-title">Three ways in.</h2>
+            <p class="section-intro">
+                Each part of the register has one job. Pick where you want to start.
+            </p>
+        </div>
+    </div>
+
+    <div class="module-list">
+        <article class="module" data-reveal style="--i: 0">
+            <div class="module-no">01</div>
+            <div>
+                <h3 class="module-title">Register</h3>
+                <p class="module-copy">
+                    Record a new student with checked fields for full name, institutional email,
+                    program, and semester. Duplicate emails are caught before anything is saved.
+                </p>
+            </div>
+            <a asp-controller="Student" asp-action="Create" class="module-action">Open form &nbsp;&#8599;</a>
+        </article>
+
+        <article class="module" data-reveal style="--i: 1">
+            <div class="module-no">02</div>
+            <div>
+                <h3 class="module-title">Directory</h3>
+                <p class="module-copy">
+                    Search and filter the full roster by name, email, or program. Narrow it further
+                    by semester, and see at a glance how many records match.
+                </p>
+            </div>
+            <a asp-controller="Student" asp-action="Index" class="module-action">Browse list &nbsp;&#8599;</a>
+        </article>
+
+        <article class="module" data-reveal style="--i: 2">
+            <div class="module-no">03</div>
+            <div>
+                <h3 class="module-title">Student record</h3>
+                <p class="module-copy">
+                    Open an individual profile to confirm enrollment details, program, and the
+                    current term before finishing the registration process.
+                </p>
+            </div>
+            <a asp-controller="Student" asp-action="Details" asp-route-id="1" class="module-action">View a profile &nbsp;&#8599;</a>
+        </article>
+    </div>
+</section>
+
+<section class="section" style="padding-top: 0" data-reveal>
+    <div class="section-head">
+        <div class="section-no">II.</div>
+        <div>
+            <h2 class="section-title">At a glance.</h2>
+            <p class="section-intro">Live figures from the current register.</p>
+        </div>
+    </div>
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value">@ViewBag.StudentCount</div>
+            <div class="stat-label">Students on record</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">@ViewBag.ProgramCount</div>
+            <div class="stat-label">Distinct programs</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">@ViewBag.SemesterCount</div>
+            <div class="stat-label">Active semesters</div>
+        </div>
+    </div>
+</section>

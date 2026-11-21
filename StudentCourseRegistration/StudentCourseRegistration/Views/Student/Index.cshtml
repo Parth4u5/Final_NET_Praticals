@@ -1,0 +1,89 @@
+@model IReadOnlyList<StudentCourseRegistration.Models.Student>
+
+@{
+    ViewData["Title"] = "Directory";
+    var semesters = Model.Select(s => s.Semester).Where(s => s.HasValue).Select(s => s!.Value).Distinct().OrderBy(s => s).ToList();
+}
+
+<div class="page-head" data-reveal>
+    <div>
+        <div class="page-kicker">Section 02 / Register</div>
+        <h1 class="page-title">Student directory.</h1>
+        <p class="page-sub">Every enrolled student, their program, and their current term.</p>
+    </div>
+    <div class="page-head-actions">
+        <a asp-action="Create" class="btn btn-solid">
+            Register student <span class="arrow" aria-hidden="true">&#8599;</span>
+        </a>
+    </div>
+</div>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="notice" data-reveal role="status">
+        <div>
+            <span class="notice-tag">Saved &nbsp;&middot;&nbsp; </span>
+            <span>@TempData["SuccessMessage"]</span>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Dismiss notification"></button>
+    </div>
+}
+
+<div class="filters" data-reveal>
+    <div class="field">
+        <label class="field-label" for="student-search">Search the register</label>
+        <div class="search-wrap">
+            <span class="search-mark" aria-hidden="true">/</span>
+            <input id="student-search" class="input" type="search" placeholder="Name, email or program" autocomplete="off" />
+        </div>
+    </div>
+    <div class="field">
+        <label class="field-label" for="semester-filter">Semester</label>
+        <select id="semester-filter" class="select">
+            <option value="">All terms</option>
+            @foreach (var semester in semesters)
+            {
+                <option value="@semester">Semester @semester</option>
+            }
+        </select>
+    </div>
+    <div class="filter-count" aria-live="polite">
+        Showing <strong id="visible-count">@Model.Count</strong> of <strong>@Model.Count</strong>
+    </div>
+</div>
+
+<div class="table-wrap" data-reveal>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th style="width: 84px;">Ref</th>
+                <th>Student</th>
+                <th>Email</th>
+                <th>Program</th>
+                <th>Term</th>
+                <th class="text-end" style="width: 110px;">Record</th>
+            </tr>
+        </thead>
+        <tbody id="student-rows">
+            @foreach (var student in Model)
+            {
+                <tr data-student-row
+                    data-semester="@student.Semester"
+                    data-search-text="@($"{student.Name} {student.Email} {student.Course}".ToLowerInvariant())">
+                    <td class="cell-id">@student.Id.ToString("000")</td>
+                    <td class="cell-name">@student.Name</td>
+                    <td><a class="cell-email" href="mailto:@student.Email">@student.Email</a></td>
+                    <td><span class="tag">@student.Course</span></td>
+                    <td><span class="tag tag-accent">Sem @student.Semester</span></td>
+                    <td class="text-end">
+                        <a asp-action="Details" asp-route-id="@student.Id" class="row-action">Open &nbsp;&#8599;</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div id="no-results" class="empty-state" hidden>
+        <div class="empty-mark" aria-hidden="true">&mdash;</div>
+        <p>No students match these filters. Try a different search or term.</p>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Privacy";
+}
+
+<div class="page-head" data-reveal>
+    <div>
+        <div class="page-kicker">Course Register / Information</div>
+        <h1 class="page-title">Privacy note.</h1>
+        <p class="page-sub">What this demo keeps, and what it does not.</p>
+    </div>
+</div>
+
+<div class="prose" data-reveal>
+    <h2>What is stored</h2>
+    <p>
+        Student records entered here are held in the application's memory while it is running.
+        Nothing is written to a database or to disk by this demo, and restarting the application
+        clears the register back to its starting records.
+    </p>
+
+    <h2>What is used</h2>
+    <p>
+        The details you enter &mdash; name, institutional email, program, and semester &mdash; are
+        used only to display the directory and the individual record pages. Email links on those
+        pages open your own mail client; no messages are sent by the application.
+    </p>
+
+    <h2>Third parties</h2>
+    <p>
+        Typefaces are loaded from Google Fonts. No analytics, tracking cookies, or advertising
+        scripts are included in this project.
+    </p>
+
+    <p style="margin-top: 36px;">
+        <a class="btn btn-outline" asp-controller="Home" asp-action="Index">&larr; Back to overview</a>
+    </p>
+</div>

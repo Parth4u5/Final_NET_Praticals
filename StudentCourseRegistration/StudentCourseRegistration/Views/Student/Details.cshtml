@@ -1,0 +1,77 @@
+@model StudentCourseRegistration.Models.Student
+
+@{
+    ViewData["Title"] = "Student record";
+    var initial = string.IsNullOrWhiteSpace(Model.Name) ? "?" : Model.Name.Trim().Substring(0, 1).ToUpperInvariant();
+}
+
+<div class="page-head" data-reveal>
+    <div>
+        <div class="page-kicker">Section 02 / Student record</div>
+        <h1 class="page-title">Student profile.</h1>
+        <p class="page-sub">Registration record @Model.Id.ToString("000") &middot; Marwadi University.</p>
+    </div>
+    <div class="page-head-actions">
+        <a asp-action="Index" class="btn btn-outline">&larr; Back to directory</a>
+    </div>
+</div>
+
+<div class="details-grid">
+    <div data-reveal>
+        <div class="profile-card">
+            <div class="profile-top">
+                <div>
+                    <div class="profile-avatar" aria-hidden="true">@initial</div>
+                    <h2 class="profile-name">@Model.Name</h2>
+                    <div class="profile-role">Enrolled student &middot; Semester @Model.Semester</div>
+                </div>
+                <span class="tag tag-success">Active</span>
+            </div>
+
+            <div class="detail-row">
+                <div class="detail-key">Reference</div>
+                <div class="detail-val">@Model.Id.ToString("000")</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-key">Full name</div>
+                <div class="detail-val">@Model.Name</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-key">Email address</div>
+                <div class="detail-val"><a class="cell-email" href="mailto:@Model.Email">@Model.Email</a></div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-key">Program</div>
+                <div class="detail-val"><span class="tag">@Model.Course</span></div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-key">Semester</div>
+                <div class="detail-val"><span class="tag tag-accent">Semester @Model.Semester</span></div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-key">Enrollment</div>
+                <div class="detail-val"><span class="tag tag-success">Active</span></div>
+            </div>
+        </div>
+
+        <div class="profile-actions">
+            <a asp-action="Create" class="btn btn-solid">
+                Register another <span class="arrow" aria-hidden="true">&#8599;</span>
+            </a>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-text">Back to overview &nbsp;&#8594;</a>
+        </div>
+    </div>
+
+    <aside class="form-aside" data-reveal style="--i: 1">
+        <h2 class="aside-title">About this record.</h2>
+        <p class="aside-copy">
+            This profile is generated from the registration form. Fields are checked at the time
+            of submission, and the reference number is assigned automatically.
+        </p>
+        <ul class="aside-list">
+            <li><span class="n">01</span><span>Records live in memory for this session.</span></li>
+            <li><span class="n">02</span><span>Restarting the app resets the register.</span></li>
+            <li><span class="n">03</span><span>Email addresses are unique across records.</span></li>
+        </ul>
+    </aside>
+</div>

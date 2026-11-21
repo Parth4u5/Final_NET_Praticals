@@ -1,0 +1,84 @@
+@model StudentCourseRegistration.Models.Student
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="page-head" data-reveal>
+    <div>
+        <div class="page-kicker">Section 03 / New record</div>
+        <h1 class="page-title">New registration.</h1>
+        <p class="page-sub">Enter the student's academic details. Required fields are checked when you submit.</p>
+    </div>
+    <div class="page-head-actions">
+        <a asp-action="Index" class="btn btn-outline">&larr; Directory</a>
+    </div>
+</div>
+
+<div class="form-layout">
+    <div class="form-panel" data-reveal>
+        <form asp-action="Create" method="post" novalidate>
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly" class="validation-summary-errors mb-3" role="alert"></div>
+
+            <div class="form-grid">
+                <div class="form-field">
+                    <label asp-for="Name" class="form-label"></label>
+                    <input asp-for="Name" class="form-control" placeholder="e.g. Isha Raval" />
+                    <span asp-validation-for="Name" class="field-validation-error"></span>
+                    <div class="form-hint">At least three characters.</div>
+                </div>
+
+                <div class="form-field">
+                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" type="email" class="form-control" placeholder="name@marwadiuniversity.ac.in" />
+                    <span asp-validation-for="Email" class="field-validation-error"></span>
+                    <div class="form-hint">Institutional address, one per student.</div>
+                </div>
+
+                <div class="form-field full">
+                    <label asp-for="Course" class="form-label"></label>
+                    <input asp-for="Course" class="form-control" list="courseOptions" placeholder="Select or type the program name" />
+                    <datalist id="courseOptions">
+                        <option value="B.Tech Computer Engineering"></option>
+                        <option value="B.Tech Information Technology"></option>
+                        <option value="B.Tech Artificial Intelligence & Data Science"></option>
+                        <option value="B.Tech Cyber Security"></option>
+                        <option value="Master of Computer Applications (MCA)"></option>
+                    </datalist>
+                    <span asp-validation-for="Course" class="field-validation-error"></span>
+                </div>
+
+                <div class="form-field full">
+                    <label asp-for="Semester" class="form-label"></label>
+                    <input asp-for="Semester" type="number" min="1" max="8" class="form-control" placeholder="e.g. 5" />
+                    <span asp-validation-for="Semester" class="field-validation-error"></span>
+                    <div class="form-hint">Accepts values from 1 to 8.</div>
+                </div>
+            </div>
+
+            <div class="form-footer">
+                <a asp-action="Index" class="btn btn-text">Cancel</a>
+                <button type="submit" class="btn btn-solid">
+                    Save registration <span class="arrow" aria-hidden="true">&#8594;</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <aside class="form-aside" data-reveal style="--i: 1">
+        <h2 class="aside-title">Before you submit.</h2>
+        <p class="aside-copy">A few checks run automatically when a record is saved.</p>
+        <ul class="aside-list">
+            <li><span class="n">01</span><span>Names need at least three characters.</span></li>
+            <li><span class="n">02</span><span>Use a valid institutional email address.</span></li>
+            <li><span class="n">03</span><span>Semesters run from one to eight.</span></li>
+            <li><span class="n">04</span><span>One registration per email address.</span></li>
+        </ul>
+    </aside>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
