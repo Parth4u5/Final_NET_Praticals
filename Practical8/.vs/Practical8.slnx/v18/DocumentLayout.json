@@ -1,0 +1,200 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\.Net\\.NET-LAB\\Practical8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|d:\\.net\\.net-lab\\practical8\\practical8\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|solutionrelative:practical8\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|d:\\.net\\.net-lab\\practical8\\practical8\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|solutionrelative:practical8\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|d:\\.net\\.net-lab\\practical8\\practical8\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|solutionrelative:practical8\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|d:\\.net\\.net-lab\\practical8\\practical8\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|solutionrelative:practical8\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|d:\\.net\\.net-lab\\practical8\\practical8\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|solutionrelative:practical8\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|d:\\.net\\.net-lab\\practical8\\practical8\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|solutionrelative:practical8\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|d:\\.net\\.net-lab\\practical8\\practical8\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|solutionrelative:practical8\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|d:\\.net\\.net-lab\\practical8\\practical8\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|solutionrelative:practical8\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|d:\\.net\\.net-lab\\practical8\\practical8\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|solutionrelative:practical8\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|d:\\.net\\.net-lab\\practical8\\practical8\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A10EBCE3-5378-4ED6-B9AF-A6E5916D4171}|Practical8\\Practical8.csproj|solutionrelative:practical8\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Practical8\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Practical8\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-21T10:09:24.574Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Practical8\\Models\\Product.cs",
+              "ToolTip": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Models\\Product.cs",
+              "RelativeToolTip": "Practical8\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-21T10:09:06.163Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Practical8\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Practical8\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-21T10:08:46.077Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Practical8\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Practical8\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-21T10:08:46.336Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "Practical8\\Views\\Home\\About.cshtml",
+              "ToolTip": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "Practical8\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-21T10:08:11.587Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Practical8\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "Practical8\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-21T10:07:43.923Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Practical8\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Practical8\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwBoAAACXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-21T10:05:56.707Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Practical8\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Practical8\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-21T10:05:46.619Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Practical8\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "Practical8\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-21T10:05:41.868Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "Practical8\\Views\\Product\\Create.cshtml",
+              "ToolTip": "D:\\.Net\\.NET-LAB\\Practical8\\Practical8\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "Practical8\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-21T10:05:36.032Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
